@@ -1,5 +1,4 @@
-# GULP-Template-for-Multipage-site
+# Получение удостоверений по промышленной безопасности.
 
-Шаблон сборщика GULP для разработки Многостраничного сайта (PUG SASS)
+<img width="2560" height="8495" alt="Attestat   MainPage" src="https://github.com/user-attachments/assets/5b78c07c-324d-49ee-865d-ad334a23bbee" />
 
-![Screenshot_1](https://user-images.githubusercontent.com/62849901/147762252-9d551e88-855d-434e-9b54-f947b5f992d7.png)
