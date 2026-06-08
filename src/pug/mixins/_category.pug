@@ -1,0 +1,12 @@
+mixin category(name)
+	article.category
+		.category__name #{name}
+		ul.category__list
+			block 
+		include ./../layouts/yellowBtnWithArrow.pug
+
+mixin categoryList(icon, text)
+	li.category__item 
+		img.category__icon(src="img/" +icon, alt= text)
+		span.category__text !{text}
+

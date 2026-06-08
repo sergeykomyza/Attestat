@@ -1,0 +1,34 @@
+.quests{
+	padding: 5.4em 0 4.4em 0;
+	background: #e9e9e9;
+	&__title{
+		margin: 0 0 0.5em 0;
+	}
+	&__tagtitle{
+		margin: 0 0 5.1em 0;
+		font-size: $px20;
+		letter-spacing: -0.6px;
+	}
+	&__woman{
+		position: absolute;
+		bottom: 9.2em;
+		right: 4em;
+		width: 15.815em;
+	}
+}
+
+@media(max-width: 768px){
+	.quests{
+		padding: 4.4em 0 3.4em 0;
+		&__tagtitle{
+			margin: 0 0 13em 0;
+			text-align: center;
+		}
+		&__woman{
+			position: absolute;
+			bottom: 19.1em;
+			right: 3em;
+			width: 15.815em;
+		}
+	}
+}

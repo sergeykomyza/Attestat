@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"/>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <!-- animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- custom styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Attestat | MainPage</title>
+  </head>
+  <body>
+    <!-- ======================================== HEADER-->
+    <header class="header"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col"> 
+            <div class="header__box">
+              <button class="open-m-menu mobile"> <img src="img/icon-menu.png" alt="icon-menu"/></button><img class="header__logo" src="img/Logo.png" alt="logo"/>
+              <nav class="header__nav nav"> 
+                <div class="mobile">
+                  <button class="close-m-menu"> <img src="img/cross.png" alt="cross"/></button>
+                </div>
+                <ul class="nav__list"> 
+                  <li class="nav__item"> <a class="nav__link" href="#category">Удостоверения</a></li>
+                  <li class="nav__item"> <a class="nav__link" href="#advantages">Преимущества</a></li>
+                  <li class="nav__item"> <a class="nav__link" href="#documents">Документы</a></li>
+                  <li class="nav__item"> <a class="nav__link" href="#quests">Вопрос-Ответ</a></li>
+                  <li class="nav__item"> <a class="nav__link" href="#contacts">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="desktop">
+                <div class="header__phones phones"> <img class="phones__icon" src="img/icon-telegram.png" alt="icon-telegram"/><img class="phones__icon" src="img/icon-whatsapp.png" alt="icon-whatsapp"/><a class="phones__num" href="tel:+74951234567">+7 (495) 123-45-67 </a></div>
+              </div>
+              <div class="mobile"> <a class="m-phone" href="tel:+74951234567"><img src="img/phone-img.png" alt="phone-img"/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ======================================== SECTION-->
+      <section class="home"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="home__box"> 
+                <div class="home__present present"> 
+                  <h1 class="title present__title">Гарантированное получение <br/> удостоверения по направлению <br/> <span>промышленная безопасность</span> <br/> по категориям А, Б, Г и Д</h1>
+                  <div class="present__advantages"> 
+                          <div class="present__item"> <img class="present__icon" src="img/present-img-1.png" alt="Кратчайшие &lt;br&gt; сроки"/><span class="present__text">Кратчайшие <br> сроки</span></div>
+                          <div class="present__item"> <img class="present__icon" src="img/present-img-2.png" alt="Выдаем удостоверение &lt;br&gt; с занесение в ФИС &lt;br&gt; ФРДО"/><span class="present__text">Выдаем удостоверение <br> с занесение в ФИС <br> ФРДО</span></div>
+                          <div class="present__item"> <img class="present__icon" src="img/present-img-3.png" alt="Дистанционно &lt;br&gt; по всей РФ"/><span class="present__text">Дистанционно <br> по всей РФ</span></div>
+                          <div class="present__item"> <img class="present__icon" src="img/present-img-4.png" alt="100% официальные &lt;br&gt; документы"/><span class="present__text">100% официальные <br> документы</span></div>
+                  </div>
+                </div>
+                <div class="home__form"> 
+                  <form class="form" action="/">
+                          <div class="form__item"> 
+                            <label class="form__label">Контактное лицо *</label>
+                            <input class="form__input" type="text" value="Петрушкин Виталий Евгениевич"/>
+                          </div>
+                          <div class="form__item"> 
+                            <label class="form__label">Телефон *</label>
+                            <input class="form__input" type="text" value="+7 910 123 45 67"/>
+                          </div>
+                          <div class="form__item"> 
+                            <label class="form__label">E-mail *</label>
+                            <input class="form__input" type="text" value="proexpert@jobster.ru"/>
+                          </div>
+                    <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== SECTION-->
+      <section class="categories" id="category"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="section-padding">
+                <div class="categories__titles">
+                  <h2 class="title categories__title">Выберите удостоверение нужной вам <br/> категории по промышленной <br/> безопасности. </h2><img class="categories__img" src="img/helmet.webp" alt="helmet"/>
+                </div>
+                <div class="categories__items"> 
+                        <article class="category">
+                          <div class="category__name">Б.7. Требования промышленной безопасности на объектах газораспределения и газопотребления</div>
+                          <ul class="category__list">
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-1.png" alt="Часов в программе: &lt;b&gt;72&lt;/b&gt;"/><span class="category__text">Часов в программе: <b>72</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-2.png" alt="Срок действия: &lt;b&gt;5 лет&lt;/b&gt;"/><span class="category__text">Срок действия: <b>5 лет</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-3.png" alt="Документы государственного образца"/><span class="category__text">Документы государственного образца</span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-4.png" alt="&lt;b&gt;4 500 руб.&lt;/b&gt;"/><span class="category__text"><b>4 500 руб.</b></span></li>
+                          </ul>
+                          <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                        </article>
+                        <article class="category">
+                          <div class="category__name">Б.2. Требования промышленной безопасности в нефтяной и газовой промышленности</div>
+                          <ul class="category__list">
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-1.png" alt="Часов в программе: &lt;b&gt;72&lt;/b&gt;"/><span class="category__text">Часов в программе: <b>72</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-2.png" alt="Срок действия: &lt;b&gt;5 лет&lt;/b&gt;"/><span class="category__text">Срок действия: <b>5 лет</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-3.png" alt="Документы государственного образца"/><span class="category__text">Документы государственного образца</span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-4.png" alt="&lt;b&gt;4 500 руб.&lt;/b&gt;"/><span class="category__text"><b>4 500 руб.</b></span></li>
+                          </ul>
+                          <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                        </article>
+                        <article class="category">
+                          <div class="category__name">Б.3. Требования промышленной безопасности в металлургической промышленности</div>
+                          <ul class="category__list">
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-1.png" alt="Часов в программе: &lt;b&gt;72&lt;/b&gt;"/><span class="category__text">Часов в программе: <b>72</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-2.png" alt="Срок действия: &lt;b&gt;5 лет&lt;/b&gt;"/><span class="category__text">Срок действия: <b>5 лет</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-3.png" alt="Документы государственного образца"/><span class="category__text">Документы государственного образца</span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-4.png" alt="&lt;b&gt;4 500 руб.&lt;/b&gt;"/><span class="category__text"><b>4 500 руб.</b></span></li>
+                          </ul>
+                          <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                        </article>
+                        <article class="category">
+                          <div class="category__name">Б.7. Требования промышленной безопасности на объектах газораспределения и газопотребления</div>
+                          <ul class="category__list">
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-1.png" alt="Часов в программе: &lt;b&gt;72&lt;/b&gt;"/><span class="category__text">Часов в программе: <b>72</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-2.png" alt="Срок действия: &lt;b&gt;5 лет&lt;/b&gt;"/><span class="category__text">Срок действия: <b>5 лет</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-3.png" alt="Документы государственного образца"/><span class="category__text">Документы государственного образца</span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-4.png" alt="&lt;b&gt;4 500 руб.&lt;/b&gt;"/><span class="category__text"><b>4 500 руб.</b></span></li>
+                          </ul>
+                          <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                        </article>
+                        <article class="category">
+                          <div class="category__name">Б.2. Требования промышленной безопасности в нефтяной и газовой промышленности</div>
+                          <ul class="category__list">
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-1.png" alt="Часов в программе: &lt;b&gt;72&lt;/b&gt;"/><span class="category__text">Часов в программе: <b>72</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-2.png" alt="Срок действия: &lt;b&gt;5 лет&lt;/b&gt;"/><span class="category__text">Срок действия: <b>5 лет</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-3.png" alt="Документы государственного образца"/><span class="category__text">Документы государственного образца</span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-4.png" alt="&lt;b&gt;4 500 руб.&lt;/b&gt;"/><span class="category__text"><b>4 500 руб.</b></span></li>
+                          </ul>
+                          <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                        </article>
+                        <article class="category">
+                          <div class="category__name">Б.3. Требования промышленной безопасности в металлургической промышленности</div>
+                          <ul class="category__list">
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-1.png" alt="Часов в программе: &lt;b&gt;72&lt;/b&gt;"/><span class="category__text">Часов в программе: <b>72</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-2.png" alt="Срок действия: &lt;b&gt;5 лет&lt;/b&gt;"/><span class="category__text">Срок действия: <b>5 лет</b></span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-3.png" alt="Документы государственного образца"/><span class="category__text">Документы государственного образца</span></li>
+                                  <li class="category__item"> <img class="category__icon" src="img/category-icon-4.png" alt="&lt;b&gt;4 500 руб.&lt;/b&gt;"/><span class="category__text"><b>4 500 руб.</b></span></li>
+                          </ul>
+                          <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                        </article>
+                </div>
+              </div>
+            </div>
+          </div><img class="section-logo" src="img/logo-small.png" alt="logo"/>
+        </div>
+      </section>
+      <!-- ======================================== SECTION-->
+      <section class="advantages" id="advantages">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="section-padding">
+                <h3 class="title title--white advantages__title">Преимущества</h3>
+                <div class="advantages__items">
+                        <article class="advantage"> <img class="advantage__img" src="img/advantages-img-1.jpg" alt="Низкая стоимость"/>
+                          <div class="advantage__info"> 
+                            <div class="advantage__title">Низкая стоимость</div>
+                            <p class="advantage__text">Получение любой категории от 4 500 руб.</p>
+                          </div>
+                        </article>
+                        <article class="advantage"> <img class="advantage__img" src="img/advantages-img-2.jpg" alt="Работаем по всей РФ"/>
+                          <div class="advantage__info"> 
+                            <div class="advantage__title">Работаем по всей РФ</div>
+                            <p class="advantage__text">Для получения удостоверения не надо ехать в офис.</p>
+                          </div>
+                        </article>
+                        <article class="advantage"> <img class="advantage__img" src="img/advantages-img-3.jpg" alt="Лицензии"/>
+                          <div class="advantage__info"> 
+                            <div class="advantage__title">Лицензии</div>
+                            <p class="advantage__text">Имеем право на выдачу удостоверений в области охраны труда</p>
+                          </div>
+                        </article>
+                        <article class="advantage"> <img class="advantage__img" src="img/advantages-img-4.jpg" alt="Соблюдаем законодательство"/>
+                          <div class="advantage__info"> 
+                            <div class="advantage__title">Соблюдаем законодательство</div>
+                            <p class="advantage__text">Работаем в строгом соответствии с действующим законодательством.</p>
+                          </div>
+                        </article>
+                        <article class="advantage"> <img class="advantage__img" src="img/advantages-img-5.jpg" alt="Результат 100% "/>
+                          <div class="advantage__info"> 
+                            <div class="advantage__title">Результат 100% </div>
+                            <p class="advantage__text">Гарантируем прохождение проверки документов гос. органами.</p>
+                          </div>
+                        </article>
+                  <div class="advantages__form"> 
+                    <form class="form" action="/"> 
+                            <div class="form__item"> 
+                              <label class="form__label">Контактное лицо *</label>
+                              <input class="form__input" type="text" value="Петрушкин Виталий Евгениевич"/>
+                            </div>
+                            <div class="form__item"> 
+                              <label class="form__label">Телефон *</label>
+                              <input class="form__input" type="text" value="+7 910 123 45 67"/>
+                            </div>
+                            <div class="form__item"> 
+                              <label class="form__label">E-mail *</label>
+                              <input class="form__input" type="text" value="proexpert@jobster.ru"/>
+                            </div>
+                      <button class="btn">получить удостоверение</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== SECTION-->
+      <section class="get-sertificate"> 
+        <div class="container">
+          <div class="row">
+            <div class="col"> 
+              <div class="section-padding">
+                <h4 class="title get-sertificate__title">Получить удостоверение любой <br/> категории по промышленной <br/> безопасности</h4>
+                <div class="get-sertificate__form"> <img class="get-sertificate__img" src="img/businessman.webp" alt="man"/>
+                  <form class="form" action="/">
+                          <div class="form__item"> 
+                            <label class="form__label">Контактное лицо *</label>
+                            <input class="form__input" type="text" value="Петрушкин Виталий Евгениевич"/>
+                          </div>
+                          <div class="form__item"> 
+                            <label class="form__label">Телефон *</label>
+                            <input class="form__input" type="text" value="+7 910 123 45 67"/>
+                          </div>
+                          <div class="form__item"> 
+                            <label class="form__label">E-mail *</label>
+                            <input class="form__input" type="text" value="proexpert@jobster.ru"/>
+                          </div>
+                    <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== SECTION-->
+      <section class="documents" id="documents">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="section-padding"> 
+                <h5 class="title documents__title">Образцы документов</h5>
+                <p class="documents__tagtitle">Вы получаете удостоверение и документы об обучении, с внесением данных в ФИС ФРДО.</p>
+                <div class="documents__items">
+                  <div class="document"> <a href="img/document-1.jpg" data-fancybox="documents"> <img src="img/document-1.jpg" alt="document"/></a></div>
+                  <div class="document"> <a href="img/document-2.jpg" data-fancybox="documents"> <img src="img/document-2.jpg" alt="document"/></a></div>
+                  <div class="document"> <a href="img/document-3.jpg" data-fancybox="documents"> <img src="img/document-3.jpg" alt="document"/></a></div>
+                  <div class="document"> <a href="img/document-4.jpg" data-fancybox="documents"> <img src="img/document-4.jpg" alt="document"/></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><img class="section-logo" src="img/logo-small.png" alt="logo"/>
+      </section>
+      <!-- ======================================== SECTION-->
+      <section class="steps">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="section-padding"> 
+                <h6 class="title title--white steps__title">Процесс получения документов</h6>
+                <div class="steps__box"> 
+                  <div class="steps__items">
+                          <div class="step"> 
+                            <div class="step__num">1</div>
+                            <div class="step-info"> 
+                              <div class="step-info__name">Заявка</div>
+                              <div class="step-info__text">Оставляете заявку на сайте через форму обратной связи или по телефону</div>
+                            </div>
+                          </div>
+                          <div class="step"> 
+                            <div class="step__num">2</div>
+                            <div class="step-info"> 
+                              <div class="step-info__name">Выбор нужного удостоверения</div>
+                              <div class="step-info__text">Менеджер ответит на Ваши вопросы и поможет определиться с выбором.</div>
+                            </div>
+                          </div>
+                          <div class="step"> 
+                            <div class="step__num">3</div>
+                            <div class="step-info"> 
+                              <div class="step-info__name">Договор и документы</div>
+                              <div class="step-info__text">Подписываем с Вами договор и выдаем нужные документы.</div>
+                            </div>
+                          </div>
+                          <div class="step"> 
+                            <div class="step__num">4</div>
+                            <div class="step-info"> 
+                              <div class="step-info__name">Доставка от 1 дня</div>
+                              <div class="step-info__text">Доставим весь пакет документов с удостоверением в любою точу РФ.</div>
+                            </div>
+                          </div>
+                  </div>
+                  <div class="steps__form"><img class="steps__man" src="img/businessman-2.webp" alt="man"/>
+                    <form class="form" action="/">
+                            <div class="form__item"> 
+                              <label class="form__label">Контактное лицо *</label>
+                              <input class="form__input" type="text" value="Петрушкин Виталий Евгениевич"/>
+                            </div>
+                            <div class="form__item"> 
+                              <label class="form__label">Телефон *</label>
+                              <input class="form__input" type="text" value="+7 910 123 45 67"/>
+                            </div>
+                            <div class="form__item"> 
+                              <label class="form__label">E-mail *</label>
+                              <input class="form__input" type="text" value="proexpert@jobster.ru"/>
+                            </div>
+                      <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== SECTION-->
+      <section class="faq"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="section-padding"> 
+                <h6 class="title title--white faq__title">Часто задаваемые вопросы</h6>
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <div class="accordion-header" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true">Кому необходимо обучение по промбезопасности?</div>
+                    <div class="accordion-collapse collapse show" id="collapse1">
+                      <div class="accordion-body">
+                        <p>Аттестация по промышленной безопасности обязательна для руководителей и специалистов организаций, чья сфера деятельности связана:</p>
+                        <ul> 
+                          <li>со строительством, реконструкцией и ликвидацией опасных производственных объектов;</li>
+                          <li>с обслуживанием оборудования, применяемого на ОПО;</li>
+                          <li>с проведением экспертизы промышленной безопасности;</li>
+                          <li>с транспортированием опасных объектов и вредных веществ</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false">Каких видов бывает аттестация?</div>
+                    <div class="accordion-collapse collapse" id="collapse2">
+                      <div class="accordion-body">
+                        <p>Аттестация по промышленной безопасности обязательна для руководителей и специалистов организаций, чья сфера деятельности связана:</p>
+                        <ul> 
+                          <li>со строительством, реконструкцией и ликвидацией опасных производственных объектов;</li>
+                          <li>с обслуживанием оборудования, применяемого на ОПО;</li>
+                          <li>с проведением экспертизы промышленной безопасности;</li>
+                          <li>с транспортированием опасных объектов и вредных веществ</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false">Вносятся ли данные о выданном дипломе в ФИС ФРДО?</div>
+                    <div class="accordion-collapse collapse" id="collapse3">
+                      <div class="accordion-body">
+                        <p>Аттестация по промышленной безопасности обязательна для руководителей и специалистов организаций, чья сфера деятельности связана:</p>
+                        <ul> 
+                          <li>со строительством, реконструкцией и ликвидацией опасных производственных объектов;</li>
+                          <li>с обслуживанием оборудования, применяемого на ОПО;</li>
+                          <li>с проведением экспертизы промышленной безопасности;</li>
+                          <li>с транспортированием опасных объектов и вредных веществ</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false">Какой срок действия диплома о переподготовке?</div>
+                    <div class="accordion-collapse collapse" id="collapse4">
+                      <div class="accordion-body">
+                        <p>Аттестация по промышленной безопасности обязательна для руководителей и специалистов организаций, чья сфера деятельности связана:</p>
+                        <ul> 
+                          <li>со строительством, реконструкцией и ликвидацией опасных производственных объектов;</li>
+                          <li>с обслуживанием оборудования, применяемого на ОПО;</li>
+                          <li>с проведением экспертизы промышленной безопасности;</li>
+                          <li>с транспортированием опасных объектов и вредных веществ</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false">Сроки получения документов?</div>
+                    <div class="accordion-collapse collapse" id="collapse5">
+                      <div class="accordion-body">
+                        <p>Аттестация по промышленной безопасности обязательна для руководителей и специалистов организаций, чья сфера деятельности связана:</p>
+                        <ul> 
+                          <li>со строительством, реконструкцией и ликвидацией опасных производственных объектов;</li>
+                          <li>с обслуживанием оборудования, применяемого на ОПО;</li>
+                          <li>с проведением экспертизы промышленной безопасности;</li>
+                          <li>с транспортированием опасных объектов и вредных веществ</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-header" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false">Как я могу оплатить обучение?</div>
+                    <div class="accordion-collapse collapse" id="collapse6">
+                      <div class="accordion-body">
+                        <p>Аттестация по промышленной безопасности обязательна для руководителей и специалистов организаций, чья сфера деятельности связана:</p>
+                        <ul> 
+                          <li>со строительством, реконструкцией и ликвидацией опасных производственных объектов;</li>
+                          <li>с обслуживанием оборудования, применяемого на ОПО;</li>
+                          <li>с проведением экспертизы промышленной безопасности;</li>
+                          <li>с транспортированием опасных объектов и вредных веществ</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== SECTION-->
+      <section class="quests" id="quests">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="section-padding"> 
+                <h6 class="title quests__title">Остались вопросы ?</h6>
+                <p class="quests__tagtitle">Укажите свои данные и мы свяжемся с вами чтобы помочь.</p>
+                <div class="quests__form"> <img class="quests__woman" src="img/woman.webp" alt="woman"/>
+                  <form class="form" action="">
+                          <div class="form__item"> 
+                            <label class="form__label">Контактное лицо *</label>
+                            <input class="form__input" type="text" value="Петрушкин Виталий Евгениевич"/>
+                          </div>
+                          <div class="form__item"> 
+                            <label class="form__label">Телефон *</label>
+                            <input class="form__input" type="text" value="+7 910 123 45 67"/>
+                          </div>
+                    <button class="btn">получить удостоверение<img src="img/arrow-btn.png" alt="arrow-btn"/></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== SECTION-->
+      <section class="contacts" id="contacts"> 
+        <div class="contacts__map" id="map"></div>
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col"> 
+              <div class="section-padding"> 
+                <div class="contacts__box"> 
+                  <h6 class="contacts__title">Для связи с нами</h6>
+                  <div class="contacts__phones phones"> <img class="phones__icon" src="img/icon-telegram.png" alt="icon-telegram"/><img class="phones__icon" src="img/icon-whatsapp.png" alt="icon-whatsapp"/><a class="phones__num" href="tel:+74951234567">+7 (495) 123-45-67 </a></div><a class="contacts__email" href="mailto:info@website.ru">info@website.ru</a>
+                  <p class="contacts__adress">г. Москва, ул. Советская, д. 48. <br/> Химки, Московская обл., <br/> 143005 <br/> (ТЦ Химки Плаза)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ======================================== FOOTER-->
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col"> 
+            <div class="container-padding">
+              <div class="footer__box"> <img class="footer__logo" src="img/Logo.png" alt="logo"/>
+                <nav class="footer-nav">
+                  <ul class="footer-nav__list"> 
+                    <li class="footer-nav__item"> <a class="footer-nav__link" href="#policy">Политика конфиденциальности</a></li>
+                    <li class="footer-nav__item"> <a class="footer-nav__link" href="#requisites">Реквизиты</a></li>
+                    <li class="footer-nav__item"> <a class="footer-nav__link" href="#license">Лицензия</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="develop">
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col"> 
+            <div class="container-padding">
+              <div class="develop__box"> <span class="develop__copyright">© 2026 «Аттестация Ростехнадзора»</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======================================== SCRIPTS-->
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- inputmask -->
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- yandex map-->
+    <!-- scripts-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

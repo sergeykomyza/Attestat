@@ -1,0 +1,42 @@
+include ./../mixins/_category.pug
+
+section.categories#category 
+	.container 
+		.row 
+			.col 
+				.section-padding
+					.categories__titles
+						h2.title.categories__title Выберите удостоверение нужной вам #[br] категории по промышленной #[br] безопасности. 
+						img.categories__img(src="img/helmet.webp", alt="helmet")
+					.categories__items 
+						+category('Б.7. Требования промышленной безопасности на объектах газораспределения и газопотребления')
+							+categoryList('category-icon-1.png', 'Часов в программе: <b>72</b>')
+							+categoryList('category-icon-2.png', 'Срок действия: <b>5 лет</b>')
+							+categoryList('category-icon-3.png', 'Документы государственного образца')
+							+categoryList('category-icon-4.png', '<b>4 500 руб.</b>' )
+						+category('Б.2. Требования промышленной безопасности в нефтяной и газовой промышленности')
+							+categoryList('category-icon-1.png', 'Часов в программе: <b>72</b>')
+							+categoryList('category-icon-2.png', 'Срок действия: <b>5 лет</b>')
+							+categoryList('category-icon-3.png', 'Документы государственного образца')
+							+categoryList('category-icon-4.png', '<b>4 500 руб.</b>' )
+						+category('Б.3. Требования промышленной безопасности в металлургической промышленности')
+							+categoryList('category-icon-1.png', 'Часов в программе: <b>72</b>')
+							+categoryList('category-icon-2.png', 'Срок действия: <b>5 лет</b>')
+							+categoryList('category-icon-3.png', 'Документы государственного образца')
+							+categoryList('category-icon-4.png', '<b>4 500 руб.</b>' )
+						+category('Б.7. Требования промышленной безопасности на объектах газораспределения и газопотребления')
+							+categoryList('category-icon-1.png', 'Часов в программе: <b>72</b>')
+							+categoryList('category-icon-2.png', 'Срок действия: <b>5 лет</b>')
+							+categoryList('category-icon-3.png', 'Документы государственного образца')
+							+categoryList('category-icon-4.png', '<b>4 500 руб.</b>' )
+						+category('Б.2. Требования промышленной безопасности в нефтяной и газовой промышленности')
+							+categoryList('category-icon-1.png', 'Часов в программе: <b>72</b>')
+							+categoryList('category-icon-2.png', 'Срок действия: <b>5 лет</b>')
+							+categoryList('category-icon-3.png', 'Документы государственного образца')
+							+categoryList('category-icon-4.png', '<b>4 500 руб.</b>' )
+						+category('Б.3. Требования промышленной безопасности в металлургической промышленности')
+							+categoryList('category-icon-1.png', 'Часов в программе: <b>72</b>')
+							+categoryList('category-icon-2.png', 'Срок действия: <b>5 лет</b>')
+							+categoryList('category-icon-3.png', 'Документы государственного образца')
+							+categoryList('category-icon-4.png', '<b>4 500 руб.</b>' )
+		img.section-logo(src="img/logo-small.png", alt="logo")

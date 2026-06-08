@@ -1,0 +1,32 @@
+.get-sertificate{
+	padding: 5.2em 0 6em 0;
+	background: #E9E9E9 url('../img/form-block-bg.webp') center bottom/contain no-repeat;
+	&__title{
+		margin: 0 0 1.45em 0;
+	}
+	&__img{
+		position: absolute;
+		bottom: 0;
+		right: -1em;
+		width: 23.8125em;
+	}
+}
+
+@media(max-width: 768px){
+	.get-sertificate{
+		background: #E9E9E9 url('../img/form-block-bg.webp') center bottom/contain no-repeat;
+		&__title{
+			margin: 0 0 10em 0;
+			br{
+				display: none;
+			}
+		}
+		&__img{
+			top: -14.375em;
+			left: 50%;
+			transform: translateX(-50%);
+			width: auto;
+			height: 14.375em;
+		}
+	}
+}

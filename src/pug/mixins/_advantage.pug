@@ -1,0 +1,6 @@
+mixin advantage(img, name, text)
+	article.advantage 
+		img.advantage__img(src="img/" + img, alt= name)
+		.advantage__info 
+			.advantage__title !{name}
+			p.advantage__text !{text}

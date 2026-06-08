@@ -1,0 +1,25 @@
+
+header.header 
+	.container 
+		.row 
+			.col 
+				.header__box
+					button.open-m-menu.mobile 
+						img(src="img/icon-menu.png", alt="icon-menu")
+					img.header__logo(src="img/Logo.png", alt="logo")
+					nav.header__nav.nav 
+						.mobile
+							button.close-m-menu 
+								img(src="img/cross.png", alt="cross")
+						ul.nav__list 
+							each linkName, link  in {category: 'Удостоверения', advantages: 'Преимущества', documents: 'Документы', quests: 'Вопрос-Ответ', contacts: 'Контакты'}
+								li.nav__item 
+									a.nav__link(href="#" + link)= linkName 
+					.desktop
+						.header__phones.phones 
+							img.phones__icon(src="img/icon-telegram.png", alt="icon-telegram")
+							img.phones__icon(src="img/icon-whatsapp.png", alt="icon-whatsapp")
+							a.phones__num(href="tel:+74951234567") +7 (495) 123-45-67 
+					.mobile 
+						a.m-phone(href="tel:+74951234567")
+							img(src="img/phone-img.png", alt="phone-img")

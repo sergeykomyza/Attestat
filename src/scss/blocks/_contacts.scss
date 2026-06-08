@@ -1,0 +1,57 @@
+.contacts{
+	padding: 8em 0 8.2em 0;
+	&__map{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__box{
+		position: relative;
+		z-index: 1;
+		width: 21.875em;
+		height: 25em;
+		padding: 3.5em 3em 0 2.7em;
+		border-radius: var(--borderRadius10px);
+		background: var(--white);
+		box-shadow: var(--box_shadow);
+	}
+
+	&__title{
+		margin: 0 0 1.3em 0;
+		font-family: var(--font_2);
+		font-size: $px24;
+		letter-spacing: -0.6px;
+	}
+
+	&__phones{
+		margin: 0 0 2.1em 0;
+	}
+
+	&__email{
+		display: block;
+		margin: 0 0 1.5em 0;
+		font-family: var(--font_2);
+		font-size: $px21;
+		color: var(--green);
+	}
+
+	&__adress{
+		font-size: $px18;
+		line-height: 1.1;
+	}
+}
+
+@media(max-width: 768px){
+	.contacts{
+		padding: 7em 0 3em 0;
+		&__box{
+			width: 100%;
+			margin: 5em 0 0 0;
+			padding: 2em;
+			text-align: center;
+		}
+	}
+}

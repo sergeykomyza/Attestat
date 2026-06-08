@@ -1,0 +1,182 @@
+@import 'blocks/fonts';
+@import 'blocks/vars';
+
+/* ===================================================================*/
+/* ====================================================== main styles */ 
+/*====================================================================*/
+
+:root{
+
+	--mainPadding: 0 1em;
+
+	--font_1: 'din-pro';
+	--font_2: 'din-pro-bold';
+	--font_3: 'din-pro-condensed-regular';
+	--font_4: 'din-pro-condensed-black';
+
+	--borderRadius10px: 0.625em;
+	--borderRadiusForButtons: 30px;
+
+	--box_shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+
+	--mainBg: #F7F7F7;
+	--white: #FFF;
+	--black: #252525;
+	--yellow: #ffc600;
+	--green: #02684c;
+	--darkGreen: #004c37;
+}
+
+*,
+p,
+h1,h2,h3,h4,h5,h6{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+html{ 
+	overflow-x: hidden;
+}
+body{
+	padding: 5em 0 0 0;
+	font-family: var(--font_1);
+	font-size: 16px;
+	color: var(--black);
+	background: var(--mainBg);
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{ 
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+button{ 
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	&:focus{
+		outline: none;
+	}
+}
+input{
+	outline: none;
+}
+
+section{
+	position: relative;
+}
+
+.compensate-for-scrollbar{
+	padding-right: 0 !important;
+}
+
+.btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 3.4em;
+	font-family: var(--font_2);
+	font-size: $px18;
+	letter-spacing: -0.5px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	box-shadow: var(--box_shadow);
+	border-radius: var(--borderRadiusForButtons);
+	background: var(--yellow);
+	img{
+		width: 1.7em;
+		margin: 0 0 0 0.6em;
+	}
+}
+
+.title{
+	font-size: 2.75em;
+	line-height: 1;
+	letter-spacing: -0.03em;
+	&--white{
+		color: #FFF;
+	}
+}
+
+.section-logo{
+	position: absolute;
+	z-index: 1;
+	bottom: -2.3em;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 5.75em;
+}
+
+.section-padding{
+	padding: var(--mainPadding);
+}
+
+// переопределить ширину контейнера bootstrap
+.container{
+	max-width: 1164px;
+}
+
+.mobile{
+	display: none;
+}
+
+@media screen and ( max-width: 1200px ){
+	body{
+		font-size: 1.334445vw;
+	}
+}
+
+@media screen and ( max-width: 768px ){
+	:root{
+		--mainPadding: 0 0.5em;
+	}
+	body{
+		font-size: 16px;
+	}
+	.mobile{
+		display: flex;
+	}
+	.desktop{
+		display: none;
+	}
+	.title{
+		text-align: center;
+		font-size: 1.5625em;
+	}
+	.btn{
+		font-size: 1em;
+	}
+}
+
+/* ============================================================= HEADER */
+@import 'blocks/forms';
+/* ============================================================= HEADER */
+@import 'blocks/header';
+/* ============================================================= SECTION */
+@import 'blocks/home';
+/* ============================================================= SECTION */
+@import 'blocks/categories';
+/* ============================================================= SECTION */
+@import 'blocks/advantages';
+/* ============================================================= SECTION */
+@import 'blocks/getSertificate';
+/* ============================================================= SECTION */
+@import 'blocks/documents';
+/* ============================================================= SECTION */
+@import 'blocks/steps';
+/* ============================================================= SECTION */
+@import 'blocks/faq';
+/* ============================================================= SECTION */
+@import 'blocks/quests';
+/* ============================================================= SECTION */
+@import 'blocks/contacts';
+/* ============================================================= FOOTER */
+@import 'blocks/footer';

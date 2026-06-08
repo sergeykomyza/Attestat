@@ -1,0 +1,13 @@
+section.quests#quests
+	.container 
+		.row 
+			.col 
+				.section-padding 
+					h6.title.quests__title Остались вопросы ?
+					p.quests__tagtitle Укажите свои данные и мы свяжемся с вами чтобы помочь.
+					.quests__form 
+						img.quests__woman(src="img/woman.webp", alt="woman")
+						form.form(action="")
+							+formItem('Контактное лицо *', 'Петрушкин Виталий Евгениевич')
+							+formItem('Телефон *', '+7 910 123 45 67')
+							include ./../layouts/yellowBtnWithArrow.pug

@@ -1,0 +1,94 @@
+.faq{
+	padding: 6.8em 0 7.5em 0;
+	background: var(--darkGreen);
+	&__title{
+		margin: 0 0 1.6em 0;
+	}
+}
+
+.accordion{
+	border-radius: var(--borderRadius10px);
+	overflow: hidden;
+	&-item{
+
+	}
+	&-header{
+		position: relative;
+		padding: 0.95em 8em 1.1em 1.85em;
+		font-family: var(--font_2);
+		font-size: $px24;
+		letter-spacing: -0.5px;
+		cursor: pointer;
+		&[aria-expanded="true"]{
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0.7em;
+				right: 0.7em;
+				width: 2.0835em;
+				height: 2.0835em;
+				background: url('../img/arrow-accordeon.png') center center/contain no-repeat;
+			}
+		}
+		&[aria-expanded="false"]{
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0.7em;
+				right: 0.7em;
+				width: 2.0835em;
+				height: 2.0835em;
+				background: url('../img/cross.png') center center/contain no-repeat;
+			}
+		}
+	}
+	&-body{
+		padding: 0.6em 8em 1.4em 2.4em;
+		font-size: $px18;
+		p{
+			margin: 0 0 0.8em 0;
+		}
+		ul{
+			li{
+				position: relative;
+				display: flex;
+				align-items: center;
+				margin: 0 0 0 0;
+				line-height: 1.15;
+				&:before{
+					content: '';
+					flex-shrink: 0;
+					width: 8px;
+					height: 8px;
+					margin: 3px 11px 0 0;
+					border-radius: 50%;
+					background: var(--green);
+				}
+			}
+		}
+	}
+}
+	
+@media(max-width: 768px){
+	.faq{
+		padding: 2.8em 0 3.5em 0;
+	}
+	.accordion{
+		&-header{
+			font-size: 1.2em;
+			padding: 0.95em 3em 1.1em 0.85em;
+		}
+		&-body{
+			padding: 0.6em 2em 1.4em 2.4em;
+			font-size: 1em;
+			ul{
+				li{
+					align-items: flex-start;
+					&:before{
+						margin: 8px 11px 0 0;
+					}
+				}
+			}
+		}
+	}
+}

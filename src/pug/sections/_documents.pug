@@ -1,0 +1,13 @@
+section.documents#documents
+	.container 
+		.row 
+			.col 
+				.section-padding 
+					h5.title.documents__title Образцы документов
+					p.documents__tagtitle Вы получаете удостоверение и документы об обучении, с внесением данных в ФИС ФРДО.
+					.documents__items
+						each document in ['document-1.jpg', 'document-2.jpg', 'document-3.jpg', 'document-4.jpg']
+							.document 
+								a(href="img/" + document, data-fancybox="documents") 
+									img(src="img/" + document, alt="document")
+	img.section-logo(src="img/logo-small.png", alt="logo")

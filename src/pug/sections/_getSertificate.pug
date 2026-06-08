@@ -1,0 +1,13 @@
+section.get-sertificate 
+	.container
+		.row
+			.col 
+				.section-padding
+					h4.title.get-sertificate__title Получить удостоверение любой #[br] категории по промышленной #[br] безопасности
+					.get-sertificate__form 
+						img.get-sertificate__img(src="img/businessman.webp", alt="man")
+						form.form(action="/")
+							+formItem('Контактное лицо *', 'Петрушкин Виталий Евгениевич')
+							+formItem('Телефон *', '+7 910 123 45 67')
+							+formItem('E-mail *', 'proexpert@jobster.ru')
+							include ./../layouts/yellowBtnWithArrow.pug

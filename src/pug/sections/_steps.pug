@@ -1,0 +1,21 @@
+include ./../mixins/_step.pug
+
+section.steps
+	.container 
+		.row 
+			.col 
+				.section-padding 
+					h6.title.title--white.steps__title Процесс получения документов
+					.steps__box 
+						.steps__items
+							+step('1', 'Заявка', 'Оставляете заявку на сайте через форму обратной связи или по телефону')
+							+step('2', 'Выбор нужного удостоверения', 'Менеджер ответит на Ваши вопросы и поможет определиться с выбором.')
+							+step('3', 'Договор и документы', 'Подписываем с Вами договор и выдаем нужные документы.')
+							+step('4', 'Доставка от 1 дня', 'Доставим весь пакет документов с удостоверением в любою точу РФ.')
+						.steps__form
+							img.steps__man(src="img/businessman-2.webp", alt="man")
+							form.form(action="/")
+								+formItem('Контактное лицо *', 'Петрушкин Виталий Евгениевич')
+								+formItem('Телефон *', '+7 910 123 45 67')
+								+formItem('E-mail *', 'proexpert@jobster.ru')
+								include ./../layouts/yellowBtnWithArrow.pug

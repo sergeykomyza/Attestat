@@ -1,0 +1,121 @@
+.steps{
+	padding: 6.4em 0 10em 0;
+	background: var(--green) url('../img/process-bg.jpg') center bottom/contain no-repeat;
+	&__img{
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+	}
+
+	&__title{
+		margin: 0 0 1.6em 0;
+	}
+
+	&__box{
+		position: relative;
+		z-index: 2;
+		display: flex;
+		align-items: flex-end;
+		padding: 0 0 0 2.5em;
+	}
+
+	&__items{
+		position: relative;
+		margin: 0 6em 0 0;
+		&::after{
+			content: '';
+			position: absolute;
+			z-index: -1;
+			left: 2.5em;
+			top: 0;
+			width: 2px;
+			height: 85%;
+			background: url('../img/line.png') center center;
+		}
+	}
+
+	&__man{
+		position: absolute;
+		right: -1em;
+		top: -19.1em;
+		width: 23.75em;
+	}
+}
+
+.step{
+	position: relative;
+	display: flex;
+	&:not(:last-child){
+		margin: 0 0 2.7em 0;
+	}
+	&__num{
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.5em;
+		height: 2.5em;
+		margin: 0 1.2em 0 0;
+		border-radius: 50%;
+		background: var(--white);
+		font-family: var(--font_2);
+		font-size: $px32;
+		color: var(--green);
+		
+	}
+	&-info{
+		width: 30.625em;
+		padding: 1.4em 0 2em 2.1em;
+		background: var(--darkGreen);
+		border-radius: var(--borderRadius10px);
+		&__name{
+			margin: 0 0 0.35em 0;
+			font-family: var(--font_2);
+			font-size: $px32;
+			color: var(--white);
+		}
+		&__text{
+			font-size: $px18;
+			color: var(--white);
+		}
+	}
+}
+
+@media(max-width: 768px){
+	.steps{
+		&__box{
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0 0 0 0;
+		}
+		&__items{
+			margin: 0 0 16em 0;
+			&:after{
+				height: 80%;
+				left: 1.3em;
+			}
+		}
+		&__man{
+			right: 1em;
+			top: -14.1em;
+			width: 17.75em;
+		}
+	}
+	.step{
+		&__num{
+			width: 1.7em;
+			height: 1.7em;
+			font-size: $px24;
+		}
+		&-info{
+			width: 15.9375em;
+			padding: 1em;
+			&__name{
+				font-size: $px24;
+			}
+			&__text{
+				font-size: 1em;
+			}
+		}
+	}
+}

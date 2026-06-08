@@ -1,0 +1,22 @@
+include ./../mixins/_presentItem.pug
+include ./../mixins/_formItem.pug
+
+section.home 
+	.container 
+		.row 
+			.col 
+				.home__box 
+					.home__present.present 
+						h1.title.present__title Гарантированное получение #[br] удостоверения по направлению #[br] #[span промышленная безопасность] #[br] по категориям А, Б, Г и Д
+						.present__advantages 
+							+presentItem('present-img-1.png', 'Кратчайшие <br> сроки')
+							+presentItem('present-img-2.png', 'Выдаем удостоверение <br> с занесение в ФИС <br> ФРДО')
+							+presentItem('present-img-3.png', 'Дистанционно <br> по всей РФ')
+							+presentItem('present-img-4.png', '100% официальные <br> документы')
+					.home__form 
+						form.form(action="/")
+							+formItem('Контактное лицо *', 'Петрушкин Виталий Евгениевич')
+							+formItem('Телефон *', '+7 910 123 45 67')
+							+formItem('E-mail *', 'proexpert@jobster.ru')
+							include ./../layouts/yellowBtnWithArrow.pug
+

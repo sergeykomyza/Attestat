@@ -1,0 +1,27 @@
+-
+	accordeon = [
+		{num: '1', text: 'Кому необходимо обучение по промбезопасности?', show: true},
+		{num: '2', text: 'Каких видов бывает аттестация?'},
+		{num: '3', text: 'Вносятся ли данные о выданном дипломе в ФИС ФРДО?'},
+		{num: '4', text: 'Какой срок действия диплома о переподготовке?'},
+		{num: '5', text: 'Сроки получения документов?'},
+		{num: '6', text: 'Как я могу оплатить обучение?'}
+	]
+
+section.faq 
+	.container 
+		.row 
+			.col 
+				.section-padding 
+					h6.title.title--white.faq__title Часто задаваемые вопросы
+					.accordion
+						each elem in accordeon
+							.accordion-item
+								.accordion-header(data-bs-toggle='collapse' data-bs-target=(`#collapse${elem.num}`) aria-expanded=`${elem.show == true ? 'true' : 'false'}`)
+									| !{elem.text}
+								.accordion-collapse.collapse(id=`collapse${elem.num}` class=`${elem.show === true ? 'show' : ''}`)
+									.accordion-body
+										p Аттестация по промышленной безопасности обязательна для руководителей и специалистов организаций, чья сфера деятельности связана:
+										ul 
+											each item in ['со строительством, реконструкцией и ликвидацией опасных производственных объектов;', 'с обслуживанием оборудования, применяемого на ОПО;', 'с проведением экспертизы промышленной безопасности;', 'с транспортированием опасных объектов и вредных веществ']
+												li= item

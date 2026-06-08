@@ -1,0 +1,20 @@
+include ./../mixins/_advantage.pug
+
+section.advantages#advantages
+	.container 
+		.row 
+			.col 
+				.section-padding
+					h3.title.title--white.advantages__title Преимущества
+					.advantages__items
+						+advantage('advantages-img-1.jpg', 'Низкая стоимость', 'Получение любой категории от 4 500 руб.')
+						+advantage('advantages-img-2.jpg', 'Работаем по всей РФ', 'Для получения удостоверения не надо ехать в офис.')
+						+advantage('advantages-img-3.jpg', 'Лицензии', 'Имеем право на выдачу удостоверений в области охраны труда')
+						+advantage('advantages-img-4.jpg', 'Соблюдаем законодательство', 'Работаем в строгом соответствии с действующим законодательством.')
+						+advantage('advantages-img-5.jpg', 'Результат 100% ', 'Гарантируем прохождение проверки документов гос. органами.')
+						.advantages__form 
+							form.form(action="/") 
+								+formItem('Контактное лицо *', 'Петрушкин Виталий Евгениевич')
+								+formItem('Телефон *', '+7 910 123 45 67')
+								+formItem('E-mail *', 'proexpert@jobster.ru')
+								button.btn получить удостоверение

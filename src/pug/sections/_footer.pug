@@ -1,0 +1,22 @@
+footer.footer 
+	.container 
+		.row 
+			.col 
+				.container-padding
+					.footer__box 
+						img.footer__logo(src="img/Logo.png", alt="logo")
+						nav.footer-nav
+							ul.footer-nav__list 
+								each item, hrefs in {policy: 'Политика конфиденциальности', requisites: 'Реквизиты', license: 'Лицензия'}
+									li.footer-nav__item 
+										a.footer-nav__link(href="#" + hrefs)= item
+.develop
+	.container 
+		.row 
+			.col 
+				.container-padding
+					.develop__box 
+						span.develop__copyright © 2026 «Аттестация Ростехнадзора»
+						//- a.develop__link(href="https://scrum360.ru/") Разработка и продвижение сайта - 
+						//- 	img(src="img/logo-scrum.png", alt="logo-scrum")
+

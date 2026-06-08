@@ -1,0 +1,142 @@
+.form{
+	&__item{
+		margin: 0 0 0.8em 0;
+	}
+
+	&__label{
+		display: block;
+		margin: 0 0 0.5em 0;
+		padding: 0 0 0 0.8em;
+		font-size: 0.75em;
+		color: #FFF;
+	}
+
+	&__input{
+		width: 100%;
+		height: 3.3em;
+		padding: 0 0 0 1em;
+		font-size: $px18;
+		letter-spacing: -0.4px;
+		border: 2px solid #FFF;
+		border-radius: var(--borderRadius10px);
+		caret-color: var(--yellow);
+		&:focus{
+			box-shadow: var(--box_shadow);
+			border: 2px solid var(--yellow);
+		}
+	}
+
+}
+
+.home__form{
+	width: 23.75em;
+	height: 28.75em;
+	padding: 2.5em 1.9em 0 1.9em;
+	border-radius: var(--borderRadius10px);
+	background: var(--green);
+	.btn{
+		margin: 1.8em 0 0 0;
+	}
+}
+
+.advantages__form{
+	width: 100%;
+	height: 24.375em;
+	padding: 1.7em 2em 1.3em 2em;
+	border-radius: var(--borderRadius10px);
+	background: var(--black);
+	.form__item{
+		margin: 0 0 0.4em 0;
+	}
+	.btn{
+		margin: 1em 0 0 0;
+	}
+}
+
+.get-sertificate__form{
+	position: relative;
+	padding: 1.6em 0 2.5em 2.1em;
+	border-radius: var(--borderRadius10px);
+	background: var(--green);
+	.form{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.9em 2.5em;
+		width: 42.5em;
+		&__item{
+			margin: 0 0 0 0;
+		}
+	}
+	.btn{
+		margin: auto 0 0 0;
+	}
+}
+
+.steps__form{
+	position: relative;
+	width: 23.75em;
+	height: 28.75em;
+	padding: 2.5em 1.9em 0 1.9em;
+	border-radius: var(--borderRadius10px);
+	background: var(--black);
+	.btn{
+		margin: 1.8em 0 0 0;
+	}
+}
+
+.quests__form{
+	position: relative;
+	padding: 1.6em 2em 2.8em 2.1em;
+	border-radius: var(--borderRadius10px);
+	background: var(--green);
+	.form{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2.3em;
+		align-items: flex-end;
+		&__item{
+			flex-shrink: 0;
+			margin: 0 0 0 0;
+		}
+	}
+}
+
+@media(max-width: 768px){
+	.form{
+		&__item{
+			margin: 0 0 0.2em 0;
+		}
+		&__input{
+			height: 3em;
+		}
+	}
+	.home__form{
+		width: 100%;
+		height: auto;
+		padding: 1.1em 1.8em 2em 1.8em;
+	}
+	.get-sertificate__form{
+		padding: 1.6em 2.1em 2.5em 2.1em;
+		.form{
+			grid-template-columns: repeat(1, 1fr);
+			width: 100%;
+		}
+		.btn{
+			font-size: 0.9em;
+		}
+	}
+	.steps__form{
+		width: 100%;
+		height: auto;
+		padding: 1.5em 1.9em 1.5em 1.9em;
+		.form__item{
+			margin: 0 0 1em 0;
+		}
+	}
+	.quests__form{
+		.form{
+			grid-template-columns: 1fr;
+			gap: 1em;
+		}
+	}
+}
